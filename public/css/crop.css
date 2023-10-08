@@ -1,0 +1,101 @@
+@charset "utf-8";
+.imageBox
+{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox .thumbBox
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+	margin:7% auto;
+	left:0;
+	right:0;
+    border: 1px solid #F5F5F5;
+    background: none repeat scroll 0% 0% transparent;
+	box-shadow:100% 100% rgba(0,0,0,.3);
+}
+
+.imageBox .spinner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	display:none;
+    background: url(../img/icons/load.gif) rgba(0,0,0,0.7) center no-repeat;
+	background-size: 50px 50px;
+}
+/*css for the loading dialog glass layer*/
+#load-glass
+{
+	position:fixed;
+	height:100%;
+	width:100%;
+	left:0;
+	bottom:0;
+	right:0;
+	top:0;
+	z-index:5;
+	background-color:rgba(0,0,0,.5);
+}
+/*css for the load dialog aritcle layer*/
+#load-glass .load-article
+{
+	min-height:40px;
+	width:400px;
+	padding:10px;
+	border-radius:5px;
+	background-color:white;
+	display:none;
+	margin:10% auto;
+}
+/*css for the loading dialog close button*/
+#load-glass .close-icon
+{
+	height:30px;
+	width:30px;
+	display:none;
+	background:url(../img/icons/close_icon.png) center no-repeat;
+	cursor:pointer;
+	float:right;
+}
+#load-glass .progress-gif
+{
+	height:50px;
+	width:150px;
+	padding-bottom:100px;
+	text-align:center;
+	margin:10% auto;
+	font-weight:bold;
+	background:url(../img/icons/load.gif) center no-repeat;
+	background-size:50px 50px;
+}
+.button
+{
+	font: bold 16px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	display:block;
+	padding:15px;
+	color:black;
+	cursor:pointer;
+	border:none;
+	border-radius:5px;
+	max-width:110px;
+	text-align:center;
+	margin-top:5px;
+	color:white;
+	background-color:#00CA33;
+}
+.button:hover
+{
+	background-color:#00B02D;
+}

@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	
+	background-color: #F9F9F9;
+}
+
+/*a {
+	color:#81c223;
+}
+*/
+a {
+	color:#252525;
+}
+
+a:hover {
+	color:#81f223;
+	text-decoration:none;
+}
+a:active {
+	color:#81f223;
+	text-decoration:none;
+}
+a:focus {
+	color:#81f223;
+	text-decoration:none;
+}
+
+.form label sup {
+    color: #81c223;	
+}
+
+#slide-height {
+	height:390px;
+}
+
+.nav-cat li {
+	padding-bottom:2px;
+	padding-top:2px;
+}
+
+.current-menu {
+	color:#81f223;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+
+#marginbottom20 {
+	margin-bottom:20px;
+}
+#nomargin {
+	margin:0px;
+	padding:0px;
+}
+#margintop10 {
+	margin-top:5px;
+}
+.styleGreen{
+	color:#81f223;
+}
+#bold {
+	font-weight:bold;
+	font-size:1.0em;
+}
+
+#white {
+	background-color:#FFF;
+}
+
+#gray {
+	background-color:#CCCCCC;
+}
+
+#margintop30 {
+	margin-top:30px;
+}
+
+#flow-right {
+	float:right;	
+	
+}
+
+.shop-item-list {
+  display: block;
+  height: 480px;
+  max-width: 480px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none !important;
+  background-color: #F7F7F7;
+}
+
+.shop-item-list figure {
+    height: auto;
+}
+
+.shop-item-list:hover {
+	box-shadow: 1px 1px 3px rgba(153,255,102,1);
+	transition: box-shadow .3s ease-in;
+	-webkit-transition: box-shadow .3s ease-in;
+	-moz-transition: box-shadow .3s ease-in;
+}
+
+.related-item-list {
+  display: block;
+  height: 335px;
+  max-width: 480px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none !important;
+  background-color: #F7F7F7;
+}
+
+.related-item-list figure {
+    height:auto;
+
+}
+
+.img-responsive{
+
+	display:inline-block;	
+	
+}
+
+/*
+	@CART
+*/
+.cartContent {
+	padding:0;
+}
+.cartContent .item {
+	background: #F5F5F5;
+	background-color: transparent;
+	background: -webkit-linear-gradient(top, white 1%, #f9f9f9 98%) repeat scroll 0 0 transparent;
+	background: linear-gradient(to bottom, white 1%, #f9f9f9 98%) repeat scroll 0 0 transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.cartContent .item {
+	margin-top:-1px;
+	border:rgba(0,0,0,0.05) 1px solid;
+}
+.cartContent .sky-form.boxed {
+	border: rgba(0,0,0,0.1) 1px solid;
+}
+
+.cartContent .item.head {
+	border-bottom:0;
+}
+.cartContent .cart_img {
+	float:left;
+	width:100px;
+	padding:10px;
+	text-align:left;
+}
+.cartContent .product_name {
+	float:left;
+	width:50%;
+	padding:10px;
+	text-decoration:none;
+}
+	.cartContent .product_name:hover>span {
+		text-decoration:underline;
+	}
+	.cartContent .product_name >small {
+		display:block;
+		font-size:11px;
+		line-height:11px;
+		color:rgba(0,0,0,0.5);
+	}
+.cartContent .qty {
+	float:right;
+	width:160px;
+	font-size:15px;
+	padding:10px;
+	text-align:center;
+}
+.cartContent .qty input {
+	padding:3px; margin:0;
+	border:#ccc 1px solid;
+	width:50px; margin-right:3px;
+	text-align:center;
+}
+.cartContent .total_price {
+	float:right;
+	width:150px;
+	font-size:15px;
+	padding:10px;
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+}
+.cartContent .remove_item {
+	float:right;
+	padding:5px 5px 5px 7px;
+	width:30px; margin-right:8px;
+}
+.cartContent a.remove_item {
+	background:#fff;
+	border:#eee 1px solid;
+	padding-top:0;
+	margin-top:10px;
+	height:30px;
+	line-height:28px;
+	font-size:18px;
+	text-decoration:none;
+	color:rgba(0,0,0,0.5);
+	border-radius:3px;
+
+}
+.cartContent .total {
+	text-align:right;
+	font-weight:bold;
+	padding:10px 0;
+	text-align:right;
+	width:200px;
+}
+.cartContent .total small {
+	font-weight:normal;
+	display:block;
+}
+.cartContent .totalToPay {
+	font-size:18px;
+	padding:10px 0;
+	display:block;
+}
+.cartContent .btn_update {
+	margin-top:20px;
+}
+
+.cartContent .cart_totals {
+	border-bottom:rgba(0,0,0,0.1) 1px solid;
+}
+
+.cartContent .checkout fieldset {
+	padding-left:0;
+	padding-right:0;
+	margin:0;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.cartContent .item.head {
+		display:none;
+	}
+	.cartContent .product_name {
+		font-size:11px;
+		line-height:15px;
+	}
+	.cartContent .item .total_price {
+		display:none;
+	}
+	.cartContent .item .qty {
+		float:left;
+		text-align:left;
+	}
+}
+
+.greenback{
+	background-color:#81f223;
+}
+.whitecolor{
+	color:#FFF;
+}
